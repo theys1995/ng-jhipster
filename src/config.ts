@@ -25,7 +25,7 @@ export class JhiModuleConfig {
     sortDescIcon? = 'fa-sort-desc';
     sortIconSelector? = 'span.fa';
     i18nEnabled? = false;
-    defaultI18nLang? = 'en';
+    defaultI18nLang? = localStorage.getItem('language') !== null ? localStorage.getItem('language') : 'ro';
     noi18nMessage? = 'translation-not-found';
     alertAsToast? = false;
     alertTimeout? = 5000;
